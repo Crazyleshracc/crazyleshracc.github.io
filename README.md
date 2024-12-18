@@ -14,7 +14,7 @@ A fun virtual pet game where you take care of a cute raccoon! Feed it, play with
 - Discord: [Join our community](https://discord.gg/raccoonsnft)
 
 ## Play Now
-Visit [https://captainchaki.github.io/raccoonville](https://captainchaki.github.io/raccoonville) to play!
+Visit [https://captainchaki.github.io](https://captainchaki.github.io) to play!
 
 ## Creator
-Made By Crazyleshrac
+Made by Crazyleshrac
