@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Raccoon Pet Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <div class="banner">
+            <img src="https://pbs.twimg.com/profile_banners/1836407404629479424/1733693089/1500x500" alt="Raccoons Banner">
+        </div>
+        
+        <div class="stats-container">
+            <div class="stat">
+                <label>Coins</label>
+                <span id="coins">0</span>
+            </div>
+            <div class="stat">
+                <label>Happiness</label>
+                <div class="progress-bar">
+                    <div id="happiness-bar" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <label>Energy</label>
+                <div class="progress-bar">
+                    <div id="energy-bar" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <label>Hunger</label>
+                <div class="progress-bar">
+                    <div id="hunger-bar" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="raccoon-container">
+            <div id="raccoon" class="raccoon">🦝</div>
+        </div>
+
+        <div class="actions-container">
+            <div class="action-group">
+                <h3>🍽️ Food</h3>
+                <button onclick="feed('apple')" class="food-btn">
+                    <span>🍎 Apple</span>
+                    <span class="cost">-5 🪙</span>
+                </button>
+                <button onclick="feed('fish')" class="food-btn">
+                    <span>🐟 Fish</span>
+                    <span class="cost">-10 🪙</span>
+                </button>
+                <button onclick="feed('pizza')" class="food-btn">
+                    <span>🍕 Pizza</span>
+                    <span class="cost">-15 🪙</span>
+                </button>
+            </div>
+            
+            <div class="action-group">
+                <h3>🎮 Play</h3>
+                <button onclick="play('ball')" class="play-btn">
+                    <span>⚾ Ball</span>
+                    <span class="cost">-5 🪙</span>
+                </button>
+                <button onclick="play('frisbee')" class="play-btn">
+                    <span>🥏 Frisbee</span>
+                    <span class="cost">-8 🪙</span>
+                </button>
+                <button onclick="dance()" class="dance-btn">
+                    <span>💃 Dance</span>
+                    <span class="bonus">+Happiness</span>
+                </button>
+            </div>
+
+            <div class="action-group">
+                <h3>⭐ Activities</h3>
+                <button onclick="sleep()" class="sleep-btn">
+                    <span>😴 Sleep</span>
+                    <span class="bonus">+Energy</span>
+                </button>
+                <button onclick="train()" class="train-btn">
+                    <span>💪 Train</span>
+                    <span class="bonus">+Happiness</span>
+                </button>
+                <button onclick="work()" class="work-btn">
+                    <span>💼 Work</span>
+                    <span class="bonus">+20 🪙</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="daily-quests">
+            <h3>📋 Daily Quests</h3>
+            <div id="quests-list"></div>
+        </div>
+    </div>
+    
+    <div class="social-links">
+        <div class="twitter-link">
+            Twitter: <a href="https://x.com/RcoonsNFT" target="_blank">@RcoonsNFT</a>
+        </div>
+        <div class="discord-link">
+            Discord: <a href="https://discord.gg/raccoonsnft" target="_blank">discord.gg/raccoonsnft</a>
+        </div>
+        <div class="creator-credit">
+            Made By Crazyleshrac
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
