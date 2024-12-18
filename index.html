@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raccoon Pet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <div class="level-container">
+                <span class="level">✨ Level: <span id="level">1</span></span>
+                <div class="xp-bar">
+                    <div id="xp-progress" class="progress" style="width: 0%"></div>
+                </div>
+                <span class="xp">XP: <span id="xp">0</span>/<span id="xp-needed">100</span></span>
+            </div>
+            <div class="coins">
+                <span>🪙 Coins: <span id="coins">0</span></span>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat">
+                <label>🍽️ Hunger:</label>
+                <div class="progress-bar">
+                    <div class="progress" id="hunger-bar" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <label>😊 Happiness:</label>
+                <div class="progress-bar">
+                    <div class="progress" id="happiness-bar" style="width: 100%"></div>
+                </div>
+            </div>
+            <div class="stat">
+                <label>⚡ Energy:</label>
+                <div class="progress-bar">
+                    <div class="progress" id="energy-bar" style="width: 100%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="raccoon-container">
+            <div id="raccoon" class="raccoon">🦝</div>
+            <div id="action-emoji" class="action-emoji"></div>
+        </div>
+
+        <div class="actions-container">
+            <div class="action-group">
+                <h3>🍽️ Food</h3>
+                <button onclick="feed('apple')" class="food-btn">
+                    <span>🍎 Apple</span>
+                    <span class="cost">-5 🪙</span>
+                </button>
+                <button onclick="feed('fish')" class="food-btn">
+                    <span>🐟 Fish</span>
+                    <span class="cost">-10 🪙</span>
+                </button>
+                <button onclick="feed('pizza')" class="food-btn">
+                    <span>🍕 Pizza</span>
+                    <span class="cost">-15 🪙</span>
+                </button>
+            </div>
+            
+            <div class="action-group">
+                <h3>🎮 Play</h3>
+                <button onclick="play('ball')" class="play-btn">
+                    <span>⚾ Ball</span>
+                    <span class="cost">-5 🪙</span>
+                </button>
+                <button onclick="play('frisbee')" class="play-btn">
+                    <span>🥏 Frisbee</span>
+                    <span class="cost">-8 🪙</span>
+                </button>
+                <button onclick="dance()" class="dance-btn">
+                    <span>💃 Dance</span>
+                    <span class="bonus">+Happiness & Energy</span>
+                </button>
+            </div>
+
+            <div class="action-group">
+                <h3>⭐ Activities</h3>
+                <button onclick="sleep()" class="sleep-btn">
+                    <span>😴 Sleep</span>
+                    <span class="bonus">+Energy</span>
+                </button>
+                <button onclick="train()" class="train-btn">
+                    <span>💪 Train</span>
+                    <span class="bonus">+10 XP</span>
+                </button>
+                <button onclick="work()" class="work-btn">
+                    <span>💼 Work</span>
+                    <span class="bonus">+20 🪙</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="daily-quests">
+            <h3>📋 Daily Quests</h3>
+            <div id="quests-list"></div>
+        </div>
+
+        <div class="message" id="message"></div>
+
+        <div id="mini-game" class="mini-game">
+            <div class="mini-game-content">
+                <h2>🍪 Catch the Treats!</h2>
+                <div id="game-area"></div>
+                <button onclick="closeMiniGame()" class="close-btn">Close Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
